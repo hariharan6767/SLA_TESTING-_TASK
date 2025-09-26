@@ -1,1 +1,61 @@
+code:
+package calc;
+
+class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int sub(int a, int b) {
+        return a - b;
+    }
+
+    public int mul(int a, int b) {
+        return a * b;
+    }
+
+    public int div(int a, int b) {
+        return a / b;
+    }
+}
+
+
+class Calculator1 extends Calculator {
+    @Override
+    public int add(int a, int b) {
+        System.out.println("Add Method");
+        return a + b;
+    }
+    
+
+    @Override
+    public int sub(int a, int b) {
+        System.out.println("Sub Method");
+        return a - b;
+    }
+    
+
+    @Override
+    public int mul(int a, int b) {
+        System.out.println("Multiply Method");
+        return a * b;
+    }
+
+    @Override
+    public int div(int a, int b) {
+        System.out.println("Divide Method");
+        return a / b;
+    }
+}
+
+public class Calculation {
+    public static void main(String[] args) {
+        Calculator c = new Calculator1();  
+
+        System.out.println("Addition: " + c.add(10, 5));
+        System.out.println("Subtraction: " + c.sub(10, 5));
+        System.out.println("Multiplication: " + c.mul(10, 5));
+        System.out.println("Division: " + c.div(10, 5));
+    }
+}
 
