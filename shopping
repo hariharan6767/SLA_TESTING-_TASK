@@ -1,0 +1,50 @@
+
+package calc;
+
+public class shopping {
+	
+	private String product_name;
+	private int price;
+	private String available;
+	
+	public void set(String product_name) {
+		this.product_name= product_name;
+	}
+	public String getname()
+	{
+		return this.product_name;
+	}
+	public void setprice(int price) {
+		this.price= price;
+		
+	}
+	public int getprice()
+	{
+		
+		return this.price;
+	}
+	public void setavailable(String available) {
+		this.available= available;
+	}
+	public String getavailabale()
+	{
+		return this.available;
+	}
+	
+	public static void main(String[] args) {
+	   shopping sh=new shopping();
+	   sh.set("TV");
+	   String name=sh.getname();
+	   sh.setprice(50000);
+	   int price=sh.getprice();
+	   sh.setavailable("yes");
+	   String available=sh.getavailabale();
+	   System.out.println("Name  of the product        :"+name);
+	   System.out.println("Price of the product        :"+price);
+	   System.out.println("availability of the product :"+available);
+
+	}
+
+}
+
+
