@@ -1,0 +1,32 @@
+package calc;
+
+public class empcons {
+		  
+			String name;
+			int age;
+			String gender;
+			
+			public empcons(String a,int b,String c)
+			{
+				this.name=a;
+				this.age=b;
+				this.gender=c;
+				
+				
+				System.out.println("Emp_Name   :"+a);
+				System.out.println("Emp_Age    :"+b);
+				System.out.println("Emp_Gender :"+c);
+			}
+			public static void main(String[] args) {
+			
+				empcons ec=new empcons("Hari",22,"male");
+				System.out.println("--------------------------------------------------------");
+				empcons e1=new empcons("Muthu",20,"female");
+			
+			}
+
+		}
+
+	
+
+
